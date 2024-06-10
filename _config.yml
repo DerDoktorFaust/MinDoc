@@ -7,6 +7,15 @@ baseurl: "/MinDoc" # the subpath of your site. Change it if the name of your rep
 twitter_username: jekyllrb
 github_username:  jekyll
 
+# Custom directory structure
+layouts_dir: configuration_files/_layouts
+includes_dir: configuration_files/_includes
+
+sass:
+  load_paths:
+    - configuration_files/_sass
+
+
 # Build settings
 
 plugins:
