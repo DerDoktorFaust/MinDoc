@@ -15,6 +15,15 @@ sass:
   load_paths:
     - configuration_files/_sass
 
+assets:
+  sources:
+    - configuration_files/assets/images
+    - configuration_files/assets/js
+    - configuration_files/assets/css
+    - media_files/images
+    - media_files/audio
+    - media_files/video
+
 
 # Build settings
 
