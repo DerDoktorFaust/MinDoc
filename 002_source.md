@@ -16,7 +16,3 @@ MY WONDEFUL SOURCES part 2
 {% assign media = site.media_metadata | sort: "order" | where_exp: "item", "item.page == 'source'" | where_exp: "item", "item.media_type == 'video'" %}
 
 {% include media.html pages=media %}
-
-
-
-
