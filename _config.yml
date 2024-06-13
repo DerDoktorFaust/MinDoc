@@ -24,6 +24,8 @@ assets:
     - media_files/audio
     - media_files/video
 
+collections_dir: media_files
+
 
 # Build settings
 
@@ -31,6 +33,6 @@ plugins:
   - jekyll-feed
 
 collections:
-  mindoc_media:
+  media_metadata:
     output: true
     layout: 'image_description'

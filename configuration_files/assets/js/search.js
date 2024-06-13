@@ -15,7 +15,7 @@ var index = elasticlunr(function () {
 // Add to this index the proper metadata from the Jekyll content
 {% assign pages = site.pages | where_exp: "item", "item.title" | where_exp: "item", "item.title != 'Search'" %}
 
-{% assign collections = site.mindoc_media %}
+{% assign collections = site.media_metadata %}
 
 {% assign pagesAndCollections = pages | concat: collections %}
 
@@ -35,7 +35,7 @@ console.log( jQuery.type(index) );
 // Builds reference data (maybe not necessary for us, to check)
 var store = [
   {% assign pages = site.pages | where_exp: "item", "item.title" | where_exp: "item", "item.title != 'Search'" %}
-  {% assign collections = site.mindoc_media %}
+  {% assign collections = site.media_metadata %}
   {% assign pagesAndCollections = pages | concat: collections %}
   
   {% for text in pagesAndCollections %}
