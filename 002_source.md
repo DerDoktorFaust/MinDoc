@@ -17,8 +17,6 @@ MY WONDEFUL SOURCES part 2
 
 {% include media.html pages=media %}
 
-## jekyll-pdf-embed plugin instatiation
+### Object Instatiation of PDFs
 
-  
-
-{% pdf "media_files/pdfs/newspaper1942.pdf" %}
+<object data="{{ site.baseurl }}/media_files/pdfs/newspaper1942.pdf" width="1000" height="1500" type="application/pdf"></object>
