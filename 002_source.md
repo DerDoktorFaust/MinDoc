@@ -17,5 +17,6 @@ MY WONDEFUL SOURCES part 2
 
 {% include media.html pages=media %}
 
-## Object Instatiation of PDFs
-<object data="media_files/pdfs/newspaper1942.pdf" width="1000" height="1500" type="application/pdf"></object>
+## iframe Instatiation of PDFs
+
+<iframe src="media_files/pdfs/newspaper1942.pdf" width="1000" height="1500"></iframe>
