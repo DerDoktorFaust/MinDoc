@@ -17,6 +17,8 @@ MY WONDEFUL SOURCES part 2
 
 {% include media.html pages=media %}
 
-## iframe Instatiation of PDFs
+## jekyll-pdf-embed plugin instatiation
 
-<iframe src="media_files/pdfs/newspaper1942.pdf" width="1000" height="1500"></iframe>
+  
+
+{% pdf "media_files/pdfs/newspaper1942.pdf" %}
