@@ -31,7 +31,6 @@ collections_dir: media_files
 
 plugins:
   - jekyll-feed
-  - jekyll-pdf-embed # remove this plugin if a different PDF viewer is used (after development of MinDoc)
 
 collections:
   media_metadata:
