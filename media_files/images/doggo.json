@@ -1,0 +1,35 @@
+{
+	"@context": "http://iiif.io/api/presentation/2/context.json",
+	"@id": "https://derdoktorfaust.github.io/MinDoc/media_files/images/doggo.jpeg",
+	"@type": "sc:Manifest",
+	"label": "[Click to edit label]",
+	"metadata": [
+		{
+			"label": "Manifest URI",
+			"value": "https://derdoktorfaust.github.io/MinDoc/media_files/images/doggo.json"
+		}
+	],
+	"description": [
+		{
+			"@value": "[Click to edit description]",
+			"@language": "en"
+		}
+	],
+	"license": "https://creativecommons.org/licenses/by/3.0/",
+	"attribution": "[Click to edit attribution]",
+	"sequences": [
+		{
+			"@id": "http://ff22a4c4-7b95-4bd6-ae91-c6dce96e8418",
+			"@type": "sc:Sequence",
+			"label": [
+				{
+					"@value": "Normal Sequence",
+					"@language": "en"
+				}
+			],
+			"canvases": []
+		}
+	],
+	"structures": [],
+	"viewingDirection": "left-to-right"
+}
