@@ -19,19 +19,19 @@ MY WONDEFUL SOURCES part 2
 
 # OpenSeaDragon
 
-<div id="openseadragon1" style="width: 800px; height: 600px;"></div>
-
-<script src="{{ site.baseurl }}/configuration_files/openseadragon/openseadragon.min.js"></script>
-<script type="text/javascript">
-    var viewer = OpenSeadragon({
-        id: "openseadragon1",
-        prefixUrl: "{{ site.baseurl }}/configuration_files/openseadragon/images/",
-        tileSources: {
-            type: 'image'
-            url: "{{ site.baseurl }}/media_files/images/doggo.jpeg"
-        }
-    });
-</script>
+<div id="openseadragon1" style="width: 800px; height: 600px;">
+    <script type="text/javascript">
+    OpenSeadragon({
+            id: "openseadragon1",
+            prefixUrl: "{{ site.baseurl }}/configuration_files/assets/img/openseadragon/",
+            maxZoomLevel: 100,
+            tileSources: {
+                type: 'image',
+                url: "{{ site.baseurl }}/media_files/images/doggo.jpeg"
+            }
+        });
+    </script>
+</div>
 
 ### Object Instatiation of PDFs
 

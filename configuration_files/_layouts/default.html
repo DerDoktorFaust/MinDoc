@@ -4,14 +4,16 @@
         <title>{{ site.title }}</title>
         <link rel="stylesheet" href="{{ site.baseurl }}/configuration_files/assets/css/styles.css">
 
-        <!-- Custom CSS for styling the OpenSeadragon viewer -->
         <style>
             #openseadragon1 {
-            width: 100%;
-            height: 600px;
-            border: 1px solid black;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
             }
         </style>
+        <script src="{{ site.baseurl }}/configuration_files/assets/js/openseadragon.min.js"></script>
     </head>
     <body>
             {% include header.html %}
