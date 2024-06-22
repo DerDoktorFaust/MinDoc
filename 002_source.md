@@ -17,6 +17,22 @@ MY WONDEFUL SOURCES part 2
 
 {% include media.html pages=media %}
 
+# OpenSeaDragon
+
+<div id="openseadragon1" style="width: 800px; height: 600px;"></div>
+
+<script src="{{ site.baseurl }}/configuration_files/openseadragon/openseadragon.min.js"></script>
+<script type="text/javascript">
+    var viewer = OpenSeadragon({
+        id: "openseadragon1",
+        prefixUrl: "{{ site.baseurl }}/configuration_files/openseadragon/images/",
+        tileSources: {
+            type: 'image'
+            url: "{{ site.baseurl }}/media_files/images/doggo.jpeg"
+        }
+    });
+</script>
+
 ### Object Instatiation of PDFs
 
 <object data="{{ site.baseurl }}/media_files/pdfs/newspaper1942.pdf" width="1000" height="1500" type="application/pdf"></object>
