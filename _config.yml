@@ -20,7 +20,6 @@ assets:
     - configuration_files/assets/images
     - configuration_files/assets/js
     - configuration_files/assets/css
-    - configuration_files/assets/universalviewer
     - media_files/images
     - media_files/audio
     - media_files/video

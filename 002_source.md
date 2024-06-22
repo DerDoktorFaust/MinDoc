@@ -24,14 +24,3 @@ MY WONDEFUL SOURCES part 2
 ## iframe Instatiation of PDFs
 
 <iframe src="{{ site.baseurl }}/media_files/pdfs/newspaper1942.pdf" width="1000" height="1500"></iframe>
-
-## Universal Viewer
-
-
-<script type="text/javascript">
-    UV.init({
-        iiifResourceUri: 'https://derdoktorfaust.github.io/MinDoc/media_files/images/doggo.json',
-        root: '{{ 'configuration_files/assets/universalviewer/' | relative_url }}',
-        configUri: '{{ 'configuration_files/assets/universalviewer/lib/config.json' | relative_url }}'
-    }, document.getElementById('uv'));
-</script>
