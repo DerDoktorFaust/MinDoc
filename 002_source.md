@@ -33,10 +33,10 @@ MY WONDEFUL SOURCES part 2
     </script>
 </div>
 
-### Object Instatiation of PDFs
+### Object Instantiation of PDFs
 
 <object data="{{ site.baseurl }}/media_files/pdfs/newspaper1942.pdf" width="1000" height="1500" type="application/pdf"></object>
 
-## iframe Instatiation of PDFs
+## iframe Instantiation of PDFs
 
 <iframe src="{{ site.baseurl }}/media_files/pdfs/newspaper1942.pdf" width="1000" height="1500"></iframe>
