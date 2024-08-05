@@ -1,7 +1,7 @@
 <main class="main-wrap">
   {% assign media = {{include.pages}} %} 
   {% for element in media %} 
-  {% if element.media_type == 'image' %}
+  {% if element.media_type == 'image' and element.page == 'source' %}
   <div
     class="container"
     id="osd-container-{{ element.title }}"
