@@ -10,4 +10,4 @@ number: 003
 
 {% assign media = site.media_metadata | where_exp: "item", "item.title == 'Image_of-Dogs-Source'" %}
 
-{% include source_media.html pages=media %}
+{% include media.html pages=media %}
