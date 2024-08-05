@@ -7,7 +7,8 @@ number: 002
 # The Source
 
 MY WONDEFUL SOURCES part 2
-<!-- <iframe width="420" height="315" src="https://www.youtube.com/watch?v=EmSrQCDsMv4&t=1282s&ab_channel=BillRaymond" frameborder="0" ></iframe> -->
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/bSKkU9iPxzs?si=mLnX729W_uqT6UNy" frameborder="0" ></iframe> -->
 
 {% assign media = site.media_metadata | sort: "order" | where_exp: "item", "item.page == 'source'" | where_exp: "item", "item.media_type == 'image'" %}
 
@@ -36,6 +37,8 @@ MY WONDEFUL SOURCES part 2
 ### Object Instantiation of PDFs
 
 <object data="{{ site.baseurl }}/media_files/pdfs/newspaper1942.pdf" width="1000" height="1500" type="application/pdf"></object>
+
+[Download PDF file]({{ site.baseurl }}/media_files/pdfs/newspaper1942.pdf)
 
 ## iframe Instantiation of PDFs
 
