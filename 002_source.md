@@ -8,8 +8,6 @@ number: 002
 
 MY WONDEFUL SOURCES part 2
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/bSKkU9iPxzs?si=mLnX729W_uqT6UNy" frameborder="0"></iframe> -->
-
 
 {% assign media = site.media_metadata | sort: "order" | where_exp: "item", "item.page == 'source'" | where_exp: "item", "item.media_type == 'image'" %}
 
