@@ -23,6 +23,7 @@ assets:
     - media_files/images
     - media_files/audio
     - media_files/video
+    - media_files/pdfs
 
 collections_dir: media_files
 
