@@ -5,7 +5,19 @@
       {% for element in media %}
       {% if element.media_type == 'image' %}
         <div class="container">
-            <img src="{% if element._path contains 'assets' or element._path contains 'media_files' %} {{ site.baseurl }}{{ element._path }} {% else %} {{ element._path }} {% endif %}" class="page_image">
+          <div id="{{ element.title }}" style="width: 800px; height: 600px">
+            <script type="text/javascript">
+            OpenSeadragon({
+                    id: "{{ element.title }}",
+                    prefixUrl: "{{ site.baseurl }}/configuration_files/assets/img/openseadragon/",
+                    maxZoomLevel: 100,
+                    tileSources: {
+                        type: 'image',
+                        url: "{% if element._path contains 'assets' or element._path contains 'media_files' %} {{ site.baseurl }}{{ element._path }} {% else %} {{ element._path }} {% endif %}"
+                    }
+                });
+            </script>
+        </div>
             <div>
                 <div class="description-wrapper">
                   <p>Title: {{ element._title }}<br>
