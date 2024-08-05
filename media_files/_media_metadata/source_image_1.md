@@ -7,6 +7,8 @@ _title: Apple tree
 description: Main page photo
 creator: Unknown
 _date: Unknown
+width:
+height:
 rights: 
 type: 
 source:

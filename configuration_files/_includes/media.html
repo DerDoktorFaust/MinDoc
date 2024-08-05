@@ -4,13 +4,14 @@
       {% assign media = {{include.pages}} %}
       {% for element in media %}
       {% if element.media_type == 'image' %}
-        <div class="container">
-          <div id="{{ element.title }}" style="width: 800px; height: 600px">
+        <div class="container" style="width: 800px; height: 600px">
+          <div id="{{ element.title }}">
             <script type="text/javascript">
             OpenSeadragon({
                     id: "{{ element.title }}",
                     prefixUrl: "{{ site.baseurl }}/configuration_files/assets/img/openseadragon/",
                     maxZoomLevel: 100,
+                    defaultZoomLevel: 1,
                     tileSources: {
                         type: 'image',
                         url: "{% if element._path contains 'assets' or element._path contains 'media_files' %} {{ site.baseurl }}{{ element._path }} {% else %} {{ element._path }} {% endif %}"
@@ -18,7 +19,7 @@
                 });
             </script>
         </div>
-        <div class="description-wrapper" style="margin-bottom: 150px">
+        <div class="description-wrapper">
           <p>Title: {{ element._title }}<br>
           Creator: {{ element.creator }}<br>
           Date: {{ element._date }}</p>
