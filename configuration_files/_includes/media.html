@@ -57,6 +57,46 @@
       ><button class="description_btn">Detailed description</button></a
     >
   </div>
+
+  {% elsif element.media_type == 'video' and (element._path contains 'assets' or element.path contains 'media_files')%}
+  <div class="video-container">
+    <video
+      src="{{ site.baseurl }}{{ element._path }}" controls
+      class="page_video"
+    ></video>
+    <div>
+      <div class="description-wrapper">
+        <p>
+          Title: {{ element._title }}<br />
+          Creator: {{ element.creator }}<br />
+          Date: {{ element._date }}
+        </p>
+        <a href="{{ site.baseurl }}{{ element.url }}"
+          ><button class="description_btn">Detailed description</button></a
+        >
+      </div>
+    </div>
+  </div>
+
+  {% elsif element.media_type == 'video' and element._path contains 'youtube' %}
+  <div class="youtube-video-container">
+    <iframe
+      src="{{ element._path }}" controls
+      class="page_youtube_video" style="border: 0; object-fit: contain;"
+    ></iframe>
+    <div>
+      <div class="description-wrapper">
+        <p>
+          Title: {{ element._title }}<br />
+          Creator: {{ element.creator }}<br />
+          Date: {{ element._date }}
+        </p>
+        <a href="{{ site.baseurl }}{{ element.url }}"
+          ><button class="description_btn">Detailed description</button></a
+        >
+      </div>
+    </div>
+  </div>
   
   {% else %}
   <div class="container">
@@ -79,3 +119,17 @@
   </div>
   {% endif %} {% endfor %}
 </main>
+
+<!-- Add this script before the closing body tag -->
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    var videos = document.querySelectorAll('.page_video');
+    videos.forEach(function(video) {
+      video.addEventListener('loadedmetadata', function() {
+        var container = video.closest('.video-container');
+        container.style.width = video.videoWidth + 'px';
+        container.style.height = video.videoHeight + 'px';
+      });
+    });
+  });
+</script>
